@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <table> <!-- tabela -->
+            <tr> <!-- linha -->
+                <h1 class="title">Calculadora</h1>
+                <p id="res"> </p>
+                <td> <button class="botao" onclick="clean()">C</button> </td> <!-- dados -->
+                <td> <button class="botao" onclick="backspace()"><</button></td>
+                <td> <button class="botao" onclick="add('/')">/</button> </td>
+                <td> <button class="botao" onclick="add('*')">*</button> </td>
+            </tr>
+            <tr>
+                <td> <button class="botao" onclick="add('7')">7</button> </td>
+                <td> <button class="botao" onclick="add('8')">8</button> </td>
+                <td> <button class="botao" onclick="add('9')">9</button> </td>
+                <td> <button class="botao" onclick="add('-')">-</button> </td>
+            </tr>
+            <tr>
+                <td> <button class="botao" onclick="add('4')">4</button> </td>
+                <td> <button class="botao" onclick="add('5')">5</button> </td>
+                <td> <button class="botao" onclick="add('6')">6</button> </td>
+                <td> <button class="botao" onclick="add('+')">+</button> </td>
+            </tr>
+            <tr>
+                <td> <button class="botao" onclick="add('1')">1</button> </td>
+                <td> <button class="botao" onclick="add('2')">2</button> </td>
+                <td> <button class="botao" onclick="add('3')">3</button> </td>
+                <td rowspan="2"> <button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+                <!-- rowspan = linhas e o 2 = numero de linhas, ou seja está ocupando 2 linhas -->
+            </tr>
+            <tr>
+                <!-- colspan = colunas e o 2 = numero de colunas, ou seja está ocupando 2 colunas -->
+                <td colspan="2"> <button class="botao" style="width: 106px;" onclick="add('0')">0</button> </td>
+                <td> <button class="botao" onclick="add('.')">.</button> </td>
+                
+            </tr>
+        </table>
+    </div>
+
+    <footer>&copy;CalProject</footer>
+
+    <script src="js.js"></script>
+
+</body>
+
+</html>
